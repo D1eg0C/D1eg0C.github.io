@@ -48,7 +48,7 @@
       margin: auto;
     }
 
-    .projetos {
+    .projetos, .experiencias {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
@@ -73,6 +73,15 @@
       margin-top: 40px;
     }
 
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8em;
@@ -83,13 +92,14 @@
 <body>
 
   <header>
-    <h1>Diego</h1>
+    <h1>Seu Nome</h1>
     <p>Desenvolvedor Web | Designer | Criador de Soluções Digitais</p>
   </header>
 
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#projetos">Projetos</a>
+    <a href="#curriculo">Currículo</a>
     <a href="#contato">Contato</a>
   </nav>
 
@@ -113,6 +123,38 @@
         <h3>Projeto 3</h3>
         <p>Site institucional desenvolvido para uma empresa fictícia.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="curriculo">
+    <h2>Currículo</h2>
+
+    <div class="card">
+      <h3>Formação Acadêmica</h3>
+      <p><strong>Técnico em Desenvolvimento de Sistemas</strong> - ETEC Exemplo (2023 - 2025)</p>
+      <p><strong>Ensino Médio Completo</strong> - Escola Modelo (2020 - 2022)</p>
+    </div>
+
+    <div class="card">
+      <h3>Experiência Profissional</h3>
+      <ul>
+        <li><strong>Estagiário em Desenvolvimento Web</strong> - Empresa XYZ (jan/2024 - atual)</li>
+        <li><strong>Freelancer Front-end</strong> - Projetos Pessoais (2023 - atual)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Habilidades</h3>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>React, Node.js, Git e GitHub</li>
+        <li>Design Responsivo e UX/UI</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Download do Currículo em PDF</h3>
+      <p><a href="curriculo.pdf" download>Clique aqui para baixar meu currículo em PDF</a></p>
     </div>
   </section>
 
